@@ -6,22 +6,22 @@ const USECASE_ITEM_CLSNAME = "usecaseItem";
 const VERTICAL_LIST = [
   {text:"Travel", value:"372495"},
   {text:"Food & Beverage", value:"372494"},
-  {text:"Automotive(not now)", value:"373547"},
-  {text:"Education(not now)", value:"373546"},
-  {text:"CPG(not now)", value:"373548"},
-  {text:"Government(not now)", value:"373549"},
-  {text:"Nonprofit(not now)", value:"373550"},
-  {text:"Other(not now)", value:"373551"}
+  {text:"Automotive", value:"373547"},
+  {text:"Education", value:"373546"},
+  {text:"CPG", value:"373548"},
+  {text:"Government", value:"373549"},
+  {text:"Nonprofit", value:"373550"},
+  {text:"Other", value:"373551"}
 ];
 const USECASE_LIST = [
   {text:"Widget", value:"372869"},
   {text:"Event Screen", value:"372870"},
   {text:"Email", value:"372871"},
-  {text:"Advertising(not now)", value:"373553"},
-  {text:"Commerce(not now)", value:"373554"},
-  {text:"Competition(not now)", value:"373555"},
-  {text:"GoConnect(not now)", value:"373556"},
-  {text:"Rights(not now)", value:"373557"}
+  {text:"Advertising", value:"373553"},
+  {text:"Commerce", value:"373554"},
+  {text:"Competition", value:"373555"},
+  {text:"GoConnect", value:"373556"},
+  {text:"Rights", value:"373557"}
 ];
 
 // Item class 
@@ -140,13 +140,13 @@ function initialize(){
   this.$filterId = $(".stackla-widget").attr("data-filter");
   $(".dropdown").find('.lblButton').html("Latest");
 
-  createSideBarList();
+  this.createSideBarList();
   //$filter.showList();
 }
 
 function createSideBarList(){
-  var sideBarHtml = getSectionHtml("Vertical",VERTICAL_LIST,"searchVerticalItem");
-  sideBarHtml += getSectionHtml("UseCase",USECASE_LIST,"searchUseCaseItem");
+  var sideBarHtml = this.getSectionHtml("Vertical",VERTICAL_LIST,"searchVerticalItem");
+  sideBarHtml += this.getSectionHtml("Use Case",USECASE_LIST,"searchUseCaseItem");
   $('.sidebar_fieldset fieldset').append(sideBarHtml);
 }
 

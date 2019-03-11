@@ -28,7 +28,7 @@
     <!--header-->  
     <div id="header" class="header">
       <div id="header-left" class="header">
-        <img class = "stacklapedia_icon" src="https://uploads-cdn.stackla.com/10/danielle-degiovanni/2019-02-24/5c731dea2629f/thumbnail.png">
+        <img class = "stacklapedia_icon" src="https://stacklacrush.s3.amazonaws.com/assets/Stacklapedia-Logo.svg">
       </div>
       <div id="header-right" class="header">
         <div style="margin-top:12px">
@@ -86,23 +86,27 @@
       <div id="content">
         <div class="searchArea">
           <!-- next step 
-          <input id="txtFilter" type="text" class="searchbox" name="search"
-                 readonly value ="" style="display:none;" placeholder="Search..">
-          <div id="conditions" class="searchbox" style="display:none;"></div>
-          -->
-           <input id="txtSearch" type="text" class="searchbox" placeholder="Search for a Brand, Industry or Use Case..">
-          <div class="sortArea">
-            <div class="dropdown">
-              <button class="btn btnSortby" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><label class="lblButton">Sort by</label><span></span>
-              </button>
-              <div class="dropdown-menu sortBy" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" data-filter="73361">Latest</a>
-                <a class="dropdown-item" data-filter="106592">Oldest</a>
+<input id="txtFilter" type="text" class="searchbox" name="search"
+readonly value ="" style="display:none;" placeholder="Search..">
+<div id="conditions" class="searchbox" style="display:none;"></div>
+-->
+          <div class="searchCondition">
+            <div class="searchWithIcon">
+              <input id="txtSearch" type="text" class="searchbox" placeholder="Search for a Brand, Industry or Use Case">
+              <img src="https://stacklacrush.s3.amazonaws.com/assets/Search.svg"/>
+
+            </div>
+            <div class="sortArea">
+              <div class="dropdown" style="right:30px;">
+                <button class="btn btnSortby" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><label class="lblButton">Sort by</label><span></span>
+                </button>
+                <div class="dropdown-menu sortBy" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" data-filter="73361">Latest</a>
+                  <a class="dropdown-item" data-filter="106592">Oldest</a>
+                </div>
               </div>
             </div>
           </div>
-         
-          
           <div class="stacklaForm">
             <!-- Stackla Widget Embed Code (start) -->
             <div class="stackla-widget" data-alias="danielle-degiovanni.stackla.com" 
