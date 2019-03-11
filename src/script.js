@@ -140,7 +140,7 @@ function initialize(){
   this.$filterId = $(".stackla-widget").attr("data-filter");
   $(".dropdown").find('.lblButton').html("Latest");
 
-  this.createSideBarList();
+  createSideBarList();
   //$filter.showList();
 }
 
